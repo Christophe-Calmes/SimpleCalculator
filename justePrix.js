@@ -52,7 +52,13 @@ function onFormSubmit(event){
   
         message.innerText = `Bravo tu as gagné ${price - ((count.length)*(risk*0.1))} € ${nameOfPlayer} en ${count.length} count`;
         console.log(`Bravo tu as gagné ${price - ((count.length)*(risk*0.1))} € ${nameOfPlayer} en ${count.length} count`);
-    
+       // A tester
+       if(go === fasle && win = true) {
+        // Ajouter le bouton rejouer
+       }
+        const replayButtonElement = document.createElement("button");
+        replayButtonElement.textContent = "Rejouer";
+        replayButtonElement.addEventListener("click",
 
     
 }
