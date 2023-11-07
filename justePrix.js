@@ -1,3 +1,20 @@
+
+/*const nameInput = document.getElementById("nameOfPlayer");
+const nameOfPlayer = nameInput.value;
+const riskInput = document.getElementById("nameOfPlayer");
+const risk = nameInput.value;*/
+const initialForm = document.getElementById("initialForm");
+initialForm.addEventListener("submit", onFormSubmit);
+onFormSubmit(event){
+    // Stop le reset de la page.
+    event.preventDefault();
+    const data = new FormData(event.target);
+    const dataObject = Object.fromEntries(data.entries());
+    console.log(dataObject);
+}
+
+//console.log(nameOfPlayer);
+
 const message = document.getElementById("message");
 console.log(message);
 function randomPrice(range) {
@@ -10,18 +27,14 @@ function testNumber(data) {
         return true
     }
 }
-
-
 let count = [];
-
-const nameOfPlayer = prompt("Quel est ton petit prenom ?");
-let risk = parseInt(prompt("Vous aimez prendre des risques donner votre intervale?"))
+/*
+//const nameOfPlayer = prompt("Quel est ton petit prenom ?");
+//let risk = parseInt(prompt("Vous aimez prendre des risques donner votre intervale?"))
 if(!testNumber(risk)){
     alert("Risk n'est pas un nombre.")
     risk = parseInt(prompt("Vous aimez prendre des risques donner votre intervale?"))
 }
-
-
 const price =  randomPrice(risk);
 let win =  false;
 let number = '';
@@ -46,3 +59,4 @@ do {
 } while(!win)
 message.innerText = `Bravo tu as gagné ${price - ((count.length)*(risk*0.1))} € ${nameOfPlayer} en ${count.length} count`;
 console.log(`Bravo tu as gagné ${price - ((count.length)*(risk*0.1))} € ${nameOfPlayer} en ${count.length} count`);
+*/
