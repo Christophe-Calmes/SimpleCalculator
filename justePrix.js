@@ -9,12 +9,12 @@ do {
     
     if(price === number){
         boolean = true;
-    } else if (price > number) {
+    } else if (price < number) {
         console.log("C'est moins !");
-        message.innerText = "C'est moins !";
+        alert("C'est moins !");
     } else {
         console.log("C'est plus !");
-        message.innerText = "C'est plus !";
+        alert("C'est plus !");
     }
 
 } while(!boolean)
