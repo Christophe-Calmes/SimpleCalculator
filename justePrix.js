@@ -5,7 +5,7 @@ const riskInput = document.getElementById("nameOfPlayer");
 const risk = nameInput.value;*/
 const initialForm = document.getElementById("initialForm");
 initialForm.addEventListener("submit", onFormSubmit);
-onFormSubmit(event){
+function onFormSubmit(event){
     // Stop le reset de la page.
     event.preventDefault();
     const data = new FormData(event.target);
@@ -15,7 +15,7 @@ onFormSubmit(event){
 
 //console.log(nameOfPlayer);
 
-const message = document.getElementById("message");
+/*const message = document.getElementById("message");
 console.log(message);
 function randomPrice(range) {
     return Math.ceil(Math.random()*range);
@@ -26,7 +26,7 @@ function testNumber(data) {
     } else {
         return true
     }
-}
+}*/
 let count = [];
 /*
 //const nameOfPlayer = prompt("Quel est ton petit prenom ?");
