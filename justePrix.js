@@ -1,3 +1,5 @@
+const message = document.getElementById("message");
+console.log(message);
 const price =  Math.ceil(Math.random()*100);
 const nameOfDragon = prompt("Quel est ton petit prenom ?");
 let boolean =  false;
@@ -9,10 +11,12 @@ do {
         boolean = true;
     } else if (price > number) {
         console.log("C'est moins !");
+        message.innerText = "C'est moins !";
     } else {
         console.log("C'est plus !");
+        message.innerText = "C'est plus !";
     }
 
 } while(!boolean)
-
+message.innerText = `Bravo tu as gagné ${price} € ${nameOfDragon}`;
 console.log(`Bravo tu as gagné${price} € ${nameOfDragon}`);
